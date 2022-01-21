@@ -1,0 +1,116 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.news_ware"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+9        android:targetSdkVersion="20" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\Sumeet Ahire\StudioProjects\news_ware\android\app\src\main\AndroidManifest.xml:3:5-66
+14-->C:\Users\Sumeet Ahire\StudioProjects\news_ware\android\app\src\main\AndroidManifest.xml:3:22-64
+15
+16    <queries>
+16-->C:\Users\Sumeet Ahire\StudioProjects\news_ware\android\app\src\main\AndroidManifest.xml:4:5-25:15
+17
+18        <!-- If your app opens https URLs -->
+19        <intent>
+19-->C:\Users\Sumeet Ahire\StudioProjects\news_ware\android\app\src\main\AndroidManifest.xml:6:9-9:18
+20            <action android:name="android.intent.action.VIEW" />
+20-->C:\Users\Sumeet Ahire\StudioProjects\news_ware\android\app\src\main\AndroidManifest.xml:7:13-65
+20-->C:\Users\Sumeet Ahire\StudioProjects\news_ware\android\app\src\main\AndroidManifest.xml:7:21-62
+21
+22            <data android:scheme="https" />
+22-->C:\Users\Sumeet Ahire\StudioProjects\news_ware\android\app\src\main\AndroidManifest.xml:8:13-44
+22-->C:\Users\Sumeet Ahire\StudioProjects\news_ware\android\app\src\main\AndroidManifest.xml:8:19-41
+23        </intent>
+24        <!-- If your app makes calls -->
+25        <intent>
+25-->C:\Users\Sumeet Ahire\StudioProjects\news_ware\android\app\src\main\AndroidManifest.xml:11:9-14:18
+26            <action android:name="android.intent.action.DIAL" />
+26-->C:\Users\Sumeet Ahire\StudioProjects\news_ware\android\app\src\main\AndroidManifest.xml:12:13-65
+26-->C:\Users\Sumeet Ahire\StudioProjects\news_ware\android\app\src\main\AndroidManifest.xml:12:21-62
+27
+28            <data />
+28-->C:\Users\Sumeet Ahire\StudioProjects\news_ware\android\app\src\main\AndroidManifest.xml:8:13-44
+29        </intent>
+30        <!-- If your sends SMS messages -->
+31        <intent>
+31-->C:\Users\Sumeet Ahire\StudioProjects\news_ware\android\app\src\main\AndroidManifest.xml:16:9-19:18
+32            <action android:name="android.intent.action.SENDTO" />
+32-->C:\Users\Sumeet Ahire\StudioProjects\news_ware\android\app\src\main\AndroidManifest.xml:17:13-67
+32-->C:\Users\Sumeet Ahire\StudioProjects\news_ware\android\app\src\main\AndroidManifest.xml:17:21-64
+33
+34            <data android:scheme="https" />
+34-->C:\Users\Sumeet Ahire\StudioProjects\news_ware\android\app\src\main\AndroidManifest.xml:8:13-44
+34-->C:\Users\Sumeet Ahire\StudioProjects\news_ware\android\app\src\main\AndroidManifest.xml:8:19-41
+35        </intent>
+36        <!-- If your app sends emails -->
+37        <intent>
+37-->C:\Users\Sumeet Ahire\StudioProjects\news_ware\android\app\src\main\AndroidManifest.xml:21:9-24:18
+38            <action android:name="android.intent.action.SEND" />
+38-->C:\Users\Sumeet Ahire\StudioProjects\news_ware\android\app\src\main\AndroidManifest.xml:22:13-65
+38-->C:\Users\Sumeet Ahire\StudioProjects\news_ware\android\app\src\main\AndroidManifest.xml:22:21-62
+39
+40            <data android:mimeType="*/*" />
+40-->C:\Users\Sumeet Ahire\StudioProjects\news_ware\android\app\src\main\AndroidManifest.xml:8:13-44
+41        </intent>
+42    </queries>
+43
+44    <application
+45        android:name="android.app.Application"
+46        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+46-->[androidx.core:core:1.6.0] C:\Users\Sumeet Ahire\.gradle\caches\transforms-2\files-2.1\5f663b08eec19eef9a9d1af662d9025e\core-1.6.0\AndroidManifest.xml:24:18-86
+47        android:debuggable="true"
+48        android:icon="@mipmap/ic_launcher"
+49        android:label="news_ware" >
+50        android:usesCleartextTraffic="true">
+51        <activity
+52            android:name="com.example.news_ware.MainActivity"
+53            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+54            android:exported="true"
+55            android:hardwareAccelerated="true"
+56            android:launchMode="singleTop"
+57            android:theme="@style/LaunchTheme"
+58            android:windowSoftInputMode="adjustResize" >
+59
+60            <!--
+61                 Specifies an Android theme to apply to this Activity as soon as
+62                 the Android process has started. This theme is visible to the user
+63                 while the Flutter UI initializes. After that, this theme continues
+64                 to determine the Window background behind the Flutter UI.
+65            -->
+66            <meta-data
+67                android:name="io.flutter.embedding.android.NormalTheme"
+68                android:resource="@style/NormalTheme" />
+69
+70            <intent-filter>
+71                <action android:name="android.intent.action.MAIN" />
+72
+73                <category android:name="android.intent.category.LAUNCHER" />
+74            </intent-filter>
+75        </activity>
+76        <!--
+77             Don't delete the meta-data below.
+78             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+79        -->
+80        <meta-data
+81            android:name="flutterEmbedding"
+82            android:value="2" />
+83
+84        <activity
+84-->[:url_launcher_android] C:\Users\Sumeet Ahire\StudioProjects\news_ware\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+85            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+85-->[:url_launcher_android] C:\Users\Sumeet Ahire\StudioProjects\news_ware\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+86            android:exported="false"
+86-->[:url_launcher_android] C:\Users\Sumeet Ahire\StudioProjects\news_ware\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+87            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+87-->[:url_launcher_android] C:\Users\Sumeet Ahire\StudioProjects\news_ware\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+88    </application>
+89
+90</manifest>

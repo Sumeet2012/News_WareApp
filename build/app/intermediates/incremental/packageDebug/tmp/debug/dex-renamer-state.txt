@@ -1,0 +1,4 @@
+#Fri Jan 21 19:00:50 ICT 2022
+base.0=C\:\\Users\\Sumeet Ahire\\StudioProjects\\news_ware\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
